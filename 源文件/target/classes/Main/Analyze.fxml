@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="200.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main.Analyze">
+   <children>
+      <TextField fx:id="fileName" layoutX="14.0" layoutY="88.0" prefHeight="23.0" prefWidth="201.0" />
+      <Label layoutX="14.0" layoutY="49.0" prefHeight="32.0" prefWidth="272.0" style="-fx-font-weight: bold;" text="在下方输入要分析的目录名或 Java 源程序文件名" textFill="#ff0202">
+         <font>
+            <Font name="Segoe UI Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="confirm" layoutX="234.0" layoutY="88.0" mnemonicParsing="false" onAction="#confirmCheck" text="确定" />
+      <Label layoutX="111.0" layoutY="14.0" prefHeight="32.0" prefWidth="78.0" style="-fx-font-weight: bold;" text="分析界面">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label id="hint" fx:id="hint" layoutX="8.0" layoutY="124.0" prefHeight="67.0" prefWidth="286.0" style="-fx-font-weight: bold;" textFill="RED" wrapText="true" />
+      <Button fx:id="back" layoutX="14.0" layoutY="18.0" mnemonicParsing="false" onAction="#comeBack" style="-fx-font-weight: bold;" text="返回" />
+   </children>
+</AnchorPane>
